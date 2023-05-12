@@ -1,4 +1,4 @@
-name: Setup Python
+name: Setup React-redux
 on:
  push:
    branches:
