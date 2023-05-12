@@ -2,7 +2,7 @@ name: Setup Python
 on:
  push:
    branches:
-     - master
+     - main
 jobs:
  develop:
    runs-on: ubuntu-20.04
