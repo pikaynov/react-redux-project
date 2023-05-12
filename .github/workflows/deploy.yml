@@ -1,4 +1,4 @@
-name: Setup react-redux-projects
+name: Setup react-redux-project
 on:
  push:
    branches:
@@ -12,9 +12,9 @@ jobs:
        uses: appleboy/ssh-action@master
        with:
          host: ${{ secrets.HOST }}
-         USERNAME: ${{ secrets.USERNAME }}
-         PORT: ${{ secrets.PORT }}
-         KEY: ${{ secrets.KEY }}
+         username: ${{ secrets.USERNAME }}
+         port: ${{ secrets.PORT }}
+         key: ${{ secrets.KEY }}
          script: |
            cd ${{ secrets.WORKDIR }}
            git reset --hard HEAD
