@@ -1,4 +1,4 @@
-name: Setup React-redux-project
+name: Setup react-redux-project
 on:
  push:
    branches:
