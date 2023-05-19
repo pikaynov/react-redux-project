@@ -7,13 +7,17 @@ module.exports = merge(common, {
   mode: "development",
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html"
     })
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {

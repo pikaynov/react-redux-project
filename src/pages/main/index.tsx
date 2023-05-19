@@ -4,6 +4,7 @@ import { Content } from './components/Content';
 import { Footer } from './components/Footer';
 import css from './styles.css';
 
+
 export const MainPage = () => {
     const a = 'asfa';
     return (
