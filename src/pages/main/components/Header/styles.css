@@ -1,0 +1,11 @@
+.header {
+    flex-basis: 40px;
+    position: sticky;
+    background-color: #ffcccc;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
