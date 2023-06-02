@@ -1,9 +1,16 @@
 const path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+const rootDir = path.resolve(__dirname, './');
 
 module.exports = {
   entry: {
     main: "./src/index.tsx",
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', 'jsx', '.css', '.json'],
+    alias: {
+        src: path.resolve(rootDir, 'src'),
+    }
   },
   module: {
     rules: [
@@ -27,8 +34,5 @@ module.exports = {
             }
         }
     ]
-    },
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.css', '.less', 'json'],
     },
 };
