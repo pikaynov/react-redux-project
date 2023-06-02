@@ -34,7 +34,6 @@
         "quotes": [2, "single", { "avoidEscape": true }],
         "import/no-default-export": "warn",
         "import/order": "warn",
-        "no-shadow": ["warn"],
         "no-duplicate-imports": ["warn", { "includeExports": true }],
         "no-template-curly-in-string": "warn",
         "block-scoped-var": "warn",
