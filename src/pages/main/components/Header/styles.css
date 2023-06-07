@@ -2,6 +2,8 @@
     flex-basis: 40px;
     position: sticky;
     background-color: #ffcccc;
+    margin: 0;
+    padding: 4px;
 }
 
 .nav {

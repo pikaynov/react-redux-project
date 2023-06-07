@@ -6,26 +6,36 @@ import { MainPage } from './main';
 import { NestedProject } from './main/components/NestedProject';
 import { Tasks } from './main/components/Content/components/Interview';
 import { Input } from './main/components/Content/components/Input';
+import { Notalk } from './main/components/NestedProject/notalk';
+import { Talk } from './main/components/NestedProject/talk';
 
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <MainPage/>,
+        element: <MainPage />,
         children: [
             {
                 path: 'interview',
-                element: <Tasks/>,
+                element: <Tasks />,
             },
             {
                 path: 'input',
-                element: <Input/>,
+                element: <Input />,
             },
         ],
     },
     {
         path: '/project',
-        element: <NestedProject/>,
+        element: <NestedProject />,
+    },
+    {
+        path: 'NestedProject/talk',
+        element: <Talk />,
+    },
+    {
+        path: 'NestedProject/notalk',
+        element: <Notalk />,
     },
 ]);
 
