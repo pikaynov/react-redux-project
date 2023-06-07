@@ -28,14 +28,16 @@ const router = createBrowserRouter([
     {
         path: '/project',
         element: <NestedProject />,
-    },
-    {
-        path: 'NestedProject/talk',
-        element: <Talk />,
-    },
-    {
-        path: 'NestedProject/notalk',
-        element: <Notalk />,
+        children: [
+            {
+                path: 'NestedProject/talk',
+                element: <Talk />,
+            },
+            {
+                path: 'NestedProject/notalk',
+                element: <Notalk />,
+            },
+        ],
     },
 ]);
 
