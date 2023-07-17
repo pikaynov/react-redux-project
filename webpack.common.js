@@ -18,21 +18,15 @@ module.exports = {
             test: /\.(ts|js)x?$/,
             use: 'babel-loader',// 'ts-loader',
             exclude: /node_modules/,
-            },
+        },
         {
             test: /\.html$/,
             use: ["html-loader"]
         },
         {
-            test: /\.(svg|png|jpg|gif)$/,
-            use: {
-            loader: "file-loader",
-            options: {
-                name: "[name].[hash].[ext]",
-                outputPath: "imgs"
-            }
-            }
-        }
+            test: /\.(png|jpg|jpeg|gif)$/i,
+            type: "asset/resource",
+        },
     ]
     },
 };

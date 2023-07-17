@@ -1,11 +1,15 @@
 .header {
-    flex-basis: 40px;
+    flex-basis: 75px;
     position: sticky;
-    background-color: #ffcccc;
+    background-color: #11495A;
+    border-bottom: 1px solid black;
 }
 
 .nav {
     display: flex;
-    list-style: none;
-    gap: 24px;
+    gap: 36px;
+}
+
+.nav * {
+    text-decoration: none;
 }
